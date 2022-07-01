@@ -59,3 +59,42 @@ function kataSix(){
     return meuRetorno;
 }
 console.log(kataSix());
+
+//Kata 7- Retornar os números divisíveis por 7 até o 100: (7, 14, 21, …, 91, 98)
+function kataSeven(){
+    let meuRetorno = [];
+    for (let index = 1; index < 100; index++) {
+        if(index%7===0){
+            meuRetorno.push(index);
+        }
+    }
+    return meuRetorno;
+}
+console.log(kataSeven());
+
+//Kata 8- Retornar os números divisíveis por 3 e os números divisíveis por 7 regressivamente a partir do 100: (99, 98, 96, 93, 91, …, 14, 12, 9, 7, 6, 3)
+function kataEight(){
+    let meuRetorno = [];
+    for (let index = 100; index > 0; index--) {
+        if(index%3===0){
+            meuRetorno.push(index);
+        }
+        if(index%7===0){
+            meuRetorno.push(index);
+        }
+    }
+    return meuRetorno;
+}
+console.log(kataEight());
+
+//Kata 9- Retornar os números ímpares divisíveis por 5 até o 100: (5, 15, 25, …, 85, 95)
+function kataNine(){
+    let meuRetorno = [];
+    for (let index = 1; index < 100; index++) {
+        if(index%5===0){
+            meuRetorno.push(index);
+        }
+    }
+    return meuRetorno;
+}
+console.log(kataNine());
