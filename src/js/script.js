@@ -37,3 +37,25 @@ function katafour(){
     return meuRetorno;
 }
 console.log(katafour());
+
+//Kata 5- Retornar os números ímpares de 25 a -25: (25, 23, 21, …, -23, -25)
+function kataFive(){
+    let meuRetorno = [];
+    for (let index = 25; index > -26; index--) {
+            meuRetorno.push(index);
+    }
+    return meuRetorno;
+}
+console.log(kataFive());
+
+//Kata 6- Retornar os números divisíveis por 3 até o 100: (3, 6, 9, …, 96, 99)
+function kataSix(){
+    let meuRetorno = [];
+    for (let index = 1; index < 100; index++) {
+        if(index%3===0){
+            meuRetorno.push(index);
+        }
+    }
+    return meuRetorno;
+}
+console.log(kataSix());
